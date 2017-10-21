@@ -13,7 +13,7 @@ angular.module('video-player')
     this.selectVideo = (index) => {
       console.log('selectVideo ran', this)
       console.log("selected video index", index)
-      this.currentVideo = window.exampleVideoData[index]
+      this.currentVideo = this.videos[index]
     };
 
     this.searchResults = (currentVideo, videos) => {
